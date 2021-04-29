@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #03256c; /*azul mais escuro*/
+    --cor2: #2541b2; /*azul intermediário*/
+    --cor3: #06bee1; /*azul claro*/
+    --cor4: #fff; /*branco*/
+    --cor5: #000; /*preto*/
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--cor4);    
+    overflow-x: hidden;
+    bottom: 0;
+}
+
+#menu{
+    display: flex;/*para alinhar os itens da div*/
+    flex-direction: column;/*informa a direção de alinhamento, nesse caso em colunas*/
+    justify-content: space-between;/*insere espaço entre os itens da siv, aqui 2 ul*/
+    position: fixed;/*mentem o conteudo fixo independente da rolagem*/
+    width: 60px;
+    height: 100%;
+    background: var(--cor2);
+    overflow: hidden; /*Não deixa o conteudo vazar da div*/
+    box-shadow: 1px 1px 4px black;
+    transition: 0.5s;
+    bottom: 0;
+    overflow-x: hidden;/*impede que o conteudo vase da tela no eixo x*/
+}
+
+#menu:hover{
+    width: 200px;
+}
+
+ul{
+    position: relative;
+    list-style-type: none; /* remove os marcadores de tópico*/
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding-left: 0px;
+}
+#lista1{
+    top: 15%;
+}
+
+a{
+    position: relative;
+    text-decoration: none; /* remove o sublinhado do link*/
+    width: 100%;
+    display: flex; /*para alinhar os itens da a*/
+    color: var(--cor4);
+}
+
+li{
+    position: relative;
+    width: 100%;
+    display: flex; 
+}
+
+li:hover{
+    background: var(--cor1);
+    color: var(--cor4);
+}
+
+.icon{
+    position:relative;
+    display: block;
+    height: 48px;
+    min-width: 60px;
+    line-height: 48px;    
+    text-align: center; 
+}
+
+.titulo{
+    position: relative;
+    display: block;
+    line-height: 47px; /*altura da linha*/
+    width: 90px;
+    color: var(--cor4);
+}
+
+
+.seta{
+    position: relative;
+    color: var(--cor4);
+}
+
+.bi{
+    font-size: 22px;
+    color: var(--cor4);
+}
+
+.seta .bi{
+    font-size: 10px;
+}
+
+#paginas{
+    position: fixed;
+    top: 60px;
+    width: 100vw;
+    height: 100vh;    
+}
+
+.resp-iframe{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#head{
+    left: 0px;
+    position: fixed;
+    background-color: var(--cor1);
+    min-width: 100vw;
+    height: 50px;
+    box-shadow: 1px 1px 4px black;
+}
+
+.fas{
+    color: var(--cor4);
+    position: relative;
+    margin: 0px;
+
+}
+
+.toggle, .user{
+    padding: 7px 14px 7px 14px;
+}
+
+.toggle:hover, .user:hover{
+    border: solid #fff 1px;
+    border-radius: 3px;    
+}
+
+.user{
+    float: right;
+}
+
+.contrast{
+    float: right;
+    padding-right: 15px;
+    padding-top: 17px;
+}
+
