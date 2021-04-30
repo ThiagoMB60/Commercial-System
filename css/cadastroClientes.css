@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #03256c; /*azul mais escuro*/
+    --cor2: #2541b2; /*azul intermediário*/
+    --cor3: #06bee1; /*azul claro*/
+    --cor4: #fff; /*branco*/
+    --cor5: #000; /*preto*/
+}
+
+body{
+	background-color: var(--cor4);
+}
+
+div.container {
+	box-shadow: 1.0px 1.0px 2px black;
+	max-width: 1100px;
+	border-radius: 2px
+}
+
+div.titulo{
+	background-color: var(--cor2);
+	text-shadow: 2px 2px 4px black;
+	color: var(--cor4);
+	border-radius: 2px;
+	text-align: center;
+}
+
+h5{
+	color: var(--cor4);
+	text-align: center;
+	background-color: var(--cor3);
+	margin-top: 3px;
+	margin-bottom: 3px;
+	border-radius: 2px;
+	font-size: 12pt;
+	padding: 3px;
+}
+
+input#gravarBtn {
+	min-width: 80pt;
+}
+
+input.form-control{
+	margin-bottom: 7px;
+}
+
+#divButtom{
+	position: relative;
+	text-align: center;
+	padding-top: 2vh;
+}
+
+.row label{
+	font-size: 12pt;
+}
+
+.row input{
+	font-size: 10pt;
+	padding: 2px;
+}
+
+.row select{
+	font-size: 10pt;
+	padding: 2px;
+}
+
