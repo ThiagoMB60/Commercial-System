@@ -15,7 +15,9 @@ body{
 div.container {
 	box-shadow: 1.0px 1.0px 2px black;
 	max-width: 1100px;
-	border-radius: 2px
+	border-radius: 2px;
+	margin-right: 10px;
+	margin-left: 10px;
 }
 
 div.titulo{
